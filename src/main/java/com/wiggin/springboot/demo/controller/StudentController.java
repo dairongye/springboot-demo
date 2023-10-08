@@ -22,6 +22,7 @@ public class StudentController {
     @RequestMapping(value = "/qryById")
     public Student qry(int id){
         System.out.println("this is v2");
+        System.out.println("this is v2gi");
         return service.queryById(id);
     }
 }
