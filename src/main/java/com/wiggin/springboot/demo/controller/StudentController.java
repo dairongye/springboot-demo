@@ -1,4 +1,5 @@
 package com.wiggin.springboot.demo.controller;
+import java.util.Date;
 
 import com.wiggin.springboot.demo.model.Student;
 import com.wiggin.springboot.demo.service.StudentService;
@@ -24,5 +25,16 @@ public class StudentController {
         System.out.println("this is v2");
         System.out.println("this is v2gi");
         return service.queryById(id);
+    }
+    @RequestMapping(" getStuddent")
+    public Student getStuddent(){
+        Student student = new Student();
+        student.setId(2);
+        student.setName("csd");
+        student.setSex("vd");
+        student.setBirth(new Date());
+        student.setDepartment("vs");
+        student.setAddress("va");
+return student;
     }
 }
